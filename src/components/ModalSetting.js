@@ -30,13 +30,13 @@ function ModalSetting({
 	return (
 		<>
 			<div
-				className={`absolute h-full w-full left-0 top-0 bg-black bg-opacity-40 transition-all duration-600 ${
+				className={`absolute h-full w-full left-0 top-0 bg-black bg-opacity-40 transition-allw duration-600 ${
 					openSetting ? "" : "hidden"
 				}`}
 				onClick={() => setOpenSetting(false)}
 			></div>
 			<div
-				className={`max-w-xl bg-slate-600 absolute sm:w-96 w-11/12 left-1/2 top-1/2 p-5 rounded-3xl ${
+				className={`max-w-xl bg-slate-800 absolute sm:w-96 w-11/12 left-1/2 top-1/2 p-5 rounded-3xl ${
 					openSetting ? "" : "hidden"
 				}`}
 				style={{
@@ -67,7 +67,7 @@ function ModalSetting({
 					})}
 				</div>
 				<button
-					className="bg-gray-500 uppercase w-full mt-5 text-white rounded py-2"
+					className="bg-orange-600 uppercase w-full mt-5 text-white rounded py-2"
 					onClick={updateTimeDefaultValue}
 				>
 					Save
