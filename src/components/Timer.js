@@ -14,14 +14,14 @@ export default function Timer({
 }) {
 	const options = ["Pomodoro", "Short Break", "Long Break"];
 	return (
-		<div className="w-10/12 mx-auto pt-20 text-gray-900 flex flex-col justify-center items-center mt-10">
-			<div className="flex gap-5 items-center">
+		<div className="w-10/12 mx-auto py-20 text-orange-600 flex flex-col justify-center items-center mt-20 bg-slate-800 rounded-full">
+			<div className="flex gap-5 items-center text-gray-600">
 				{options.map((option, index) => {
 					return (
 						<h1
 							key={index}
 							className={` ${
-								index === stage ? "bg-gray-500 bg-opacity-30" : ""
+								index === stage ? "bg-gray-500 text-orange-600 bg-opacity-30" : ""
 							} p-1 cursor-pointer transition-all rounded`}
 							onClick={() => switchStage(index)}
 						>
@@ -37,7 +37,7 @@ export default function Timer({
 			</div>
 			<div className="flex gap-2 items-center">
 				<button
-					className="px-16 py-2 text-2xl rounded-md bg-gray-900 text-white uppercase font-bold"
+					className="px-8 py-2 text-2xl rounded-3xl bg-gray-900 text-white uppercase font-bold hover:bg-gray-300 transition-colors duration-300"
 					onClick={startTimer}
 				>
 					{ticking ? "Stop" : "Start"}
@@ -48,12 +48,13 @@ export default function Timer({
 						onClick={muteAlarm}
 					/>
 				)}
-			</div>
-			{ticking && (
-				<button className="uppercase text-white underline mt-5" onClick={reset}>
+				<button className="px-8 py-2 text-2xl rounded-3xl bg-gray-900 text-white uppercase font-bold hover:bg-gray-300 transition-colors duration-300" onClick={reset}>
 					Reset
 				</button>
-			)}
+			</div>
+			<div className="py-2 align items-center">
+				
+			</div>
 		</div>
 	);
 }

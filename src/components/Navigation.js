@@ -3,7 +3,7 @@ import { FiSettings } from "react-icons/fi";
 
 function Navigation({ setOpenSetting }) {
 	return (
-		<nav className="pt-5 text-black flex justify-between w-11/12 mx-auto">
+		<nav className="pt-5 text-gray-200 flex justify-between w-11/12 mx-auto">
 			<div className="flex items-center gap-1 cursor-pointer">
 				<h1>Pomodoro Timer</h1>
 			</div>
