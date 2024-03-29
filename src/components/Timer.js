@@ -15,7 +15,7 @@ export default function Timer({
 	const options = ["Pomodoro", "Short Break", "Long Break"];
 	return (
 		<div className="rounded-full mx-auto mt-[150px] bg-gradient-to-r px-[6px] py-[6px] from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]">
-		<div className="w-10/12 mx-auto py-[120px] text-orange-600 flex flex-col justify-center items-center bg-slate-800 rounded-full">
+		<div className="w-10/12 mx-auto py-[120px] text-orange-600 flex flex-col justify-center items-center bg-slate-800 rounded-full hover:bg-slate-900 transition-colors duration-500">
 			<div className="flex gap-5 items-center text-gray-600">
 				{options.map((option, index) => {
 					return (
